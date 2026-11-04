@@ -15,12 +15,15 @@ void calcDiv(int x, int y) {
     }
 }
 
-void retSum(int x, int y) {
-
+int retSum(int x, int y) {
+    return x + y;
 }
 
-void retDiv(int x, int y) {
-
+float retDiv(int x, int y) {
+    if (y==0) {
+        throw std::runtime_error("jakaja ei saa olla nolla!");
+    }
+    return (float)x / y;
 }
 
 int main()
@@ -35,6 +38,16 @@ int main()
     calcSum(a, b);
     calcDiv(a, b);
 
+    int sum = retSum(a, b);
+    cout << a << "+" <<  b << " = " << sum << endl;
+
+    //jos try-lohkossa nousee runtime error, hypätään catch-lohkoon
+    try {
+        float result = retDiv(a,b);
+        cout << a << "/" <<  b << " = " << result << endl;
+    } catch (runtime_error& e) {
+        cout<<"Error: "<< e.what()<< endl;
+    }
 
     return 0;
 }
