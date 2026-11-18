@@ -13,6 +13,7 @@ public:
     Chef(string name);
     void makeSalad();
     void makeSoup();
+    ~Chef();
 };
 
 #endif // CHEF_H
