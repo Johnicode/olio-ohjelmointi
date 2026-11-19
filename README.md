@@ -7,3 +7,4 @@ Tämä repositorio sisältää olio-ohjelmoinnin kurssin tehtäviä. Koodi on ki
 * **h2a:** Luokat, oliot, setterit/getterit, kekomuisti ja älykkäät osoittimet (Car, Rectangle, Student)
 * **h2b:** Konstruktorit ja vektorit (Car-lista)
 * **h3a:** Perintä, Chef ja ItalianChef
+* **h3b:** Perintä/ylikirjoitus, Animal ja Dog
